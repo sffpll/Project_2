@@ -1,0 +1,88 @@
+body {
+width: 90%;
+height: 5000px;
+margin: 50px auto;
+background: linear-gradient(180deg,rgb(245, 245, 245),rgb(225, 222, 222),rgb(167, 167, 167),rgb(247, 247, 247),rgb(203, 203, 203),rgb(208, 208, 208));
+}
+
+
+.text_1 {
+color: rgb(255, 255, 255);
+padding: 60px;
+line-height: 1.2;
+font-size: 110px;
+font-family: Heebo;
+text-align: left;
+}
+
+.text_2 {
+color: rgba(255, 255, 255, 0.578);
+font-size: 105px;
+font-family: Chivo;
+text-align: right;
+padding: 60px;
+}
+
+
+.text_3 {
+color: rgb(244, 75, 75);
+font-family: 'Tangerine', cursive;
+font-size: 50px;
+font-weight: lighter;
+padding: 20px;
+text-align: center;
+}
+
+
+
+.balls{
+border-radius: 70%;
+background: linear-gradient(
+90deg,
+#48bae370,
+#072eef35,
+rgb(0, 132, 189));
+position: absolute;
+width: 820px;
+height: 550px;
+margin-top: 1500px;
+animation-name: bounce;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+}
+
+#ball1 {
+left: 10%;
+animation-timing-function: cubic-bezier(0.69, 0.1, 1, 2)
+}
+#ball2 {
+left: 10%;
+animation-timing-function: cubic-bezier(1, 4, 7, 6)
+}
+
+#ball3 {
+right: 40%;
+animation-timing-function: cubic-bezier(0.10, 2, 1, 0.75)
+}
+
+#ball4 {
+left: 40%;
+animation-timing-function: cubic-bezier(0.05, 0.1, 1, 0.90)
+}
+
+@keyframes bounce {
+10% {
+top: 0px;
+}
+
+30% {
+top: 249px;
+}
+
+60% {
+top: 350px;}
+
+70% {
+top: 10000px;}
+  }
+
